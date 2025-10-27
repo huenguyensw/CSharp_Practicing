@@ -12,3 +12,4 @@ D:\C#\HelloWorldApp\HelloWorldApp\obj\Debug\net8.0\refint\HelloWorldApp.dll
 D:\C#\HelloWorldApp\HelloWorldApp\obj\Debug\net8.0\HelloWorldApp.pdb
 D:\C#\HelloWorldApp\HelloWorldApp\obj\Debug\net8.0\HelloWorldApp.genruntimeconfig.cache
 D:\C#\HelloWorldApp\HelloWorldApp\obj\Debug\net8.0\ref\HelloWorldApp.dll
+D:\C#\HelloWorldApp\HelloWorldApp\obj\Debug\net8.0\HelloWorldApp.sourcelink.json

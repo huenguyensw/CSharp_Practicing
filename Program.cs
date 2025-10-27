@@ -3,6 +3,7 @@ using Geometry;
 using System;
 using Company.HR;
 using Practicing;
+using System.Linq;
 
 namespace Hue
 {
@@ -16,7 +17,7 @@ namespace Hue
             Console.WriteLine($"Sum: {sum}, Difference: {difference}");
 
             var circle = new Circle();
-            Console.WriteLine($"Area of Circle: {Math.Round(circle.GetArea(5),2)}");
+            Console.WriteLine($"Area of Circle: {Math.Round(circle.GetArea(5), 2)}");
 
             var employee1 = new Employee("Alice", "Developer");
             var employee2 = new Employee("Bob", "Designer");
@@ -44,6 +45,21 @@ namespace Hue
             ConditionIfDemo condDemo = new ConditionIfDemo();
             condDemo.Run();
 
+            Person[] people =
+            {
+                new Person { Name = "John", Age = 25 },
+                new Person { Name = "Jane", Age = 17 },
+                new Person { Name = "Alice", Age = 30 },
+                new Person { Name = "Bob", Age = 15 }
+            };
+            LINQDemo linqDemo = new LINQDemo();
+            linqDemo.Run(people);
+
+            Calculator calcDemo = new Calculator();
+            int result = calcDemo.Add(10, 20);
+            Console.WriteLine($"Calculator Add Result: {result}");
+            int subResult = calcDemo.Subtract(20, 10);
+            Console.WriteLine($"Calculator Subtract Result: {subResult}");
         }
     }
 }
