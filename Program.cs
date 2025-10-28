@@ -4,6 +4,10 @@ using System;
 using Company.HR;
 using Practicing;
 using System.Linq;
+using Hue2;
+using System.Reflection.Metadata.Ecma335;
+using System.Reflection;
+using System.Runtime.CompilerServices;
 
 namespace Hue
 {
@@ -60,6 +64,24 @@ namespace Hue
             Console.WriteLine($"Calculator Add Result: {result}");
             int subResult = calcDemo.Subtract(20, 10);
             Console.WriteLine($"Calculator Subtract Result: {subResult}");
+
+
+
+
+            var repo = new Repository<Person>();
+            repo.Add(new Person { Name = "Alice", Age = 24 });
+            repo.Add(new Person { Name = "Jane", Age = 48 });
+
+            var adults = repo.Find(p => p.Age >= 18);
+
+            Console.WriteLine($"Adults include:");
+
+            foreach(var adult in adults)
+            {
+                Console.WriteLine($"- {adult.Name}({adult.Age})");
+            }
+
+
         }
     }
 }

@@ -11,7 +11,7 @@ public class Generics
         Console.WriteLine(GetFirst(names));   // Output: Alice
     }
 
-    public T GetFirst<T>(List<T> items)
+    public Q GetFirst<Q>(List<Q> items)
     {
         return items[0];
     }
