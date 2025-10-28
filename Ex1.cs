@@ -19,7 +19,7 @@ namespace Hue2
 
 public class Repository<T>
 {
-    private List<T> items = new List<T>();
+    private List<T> items = new List<T>(); // generic
 
     public void Add(T item) => items.Add(item);
 

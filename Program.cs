@@ -76,12 +76,13 @@ namespace Hue
 
             Console.WriteLine($"Adults include:");
 
-            foreach(var adult in adults)
+            foreach (var adult in adults)
             {
                 Console.WriteLine($"- {adult.Name}({adult.Age})");
             }
 
-
+            DelegateBasedFiltering delegateBasedFilteringDemo = new DelegateBasedFiltering();
+            delegateBasedFilteringDemo.Run();
         }
     }
 }
